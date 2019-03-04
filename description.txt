@@ -1,0 +1,31 @@
+                                                                                  REPORT
+Basic Idea:
+A robot car, gesture controlled which will give us a warning (for example, beep) in case it goes out of a certain boundary.
+Components Required for Making it Gesture Controlled:
+1. Arduino UNO
+2. DC Motors
+3. Accelerometer (ADXL335) spark fun thing
+4. HT12D (decoder)
+5. HT12E (encoder)
+6. RF Transmitter and Receiver ( 433MHz)
+7. IC L239D
+8. 9V Battery 
+9. Battery Connector
+10. Robot Chassis (wheels and a base)
+Requirements for detecting the boundary:
+1. IR Sensor
+2. Buzzer
+Additional Components Required:
+1. Jumper Wires
+2. Resistors ( 1k , 10k )
+3. PCBs
+4. Soldering Gun
+6. Black Tape
+7. Capacitors (0.1uF , 470uF)
+8. IC 7805
+9. Breadboard (for testing)
+Circuits: 
+A gesture controlled robot car consists of two circuits, a transmitter circuit and a receiver circuit.
+The transmitter consists of the accelerometer, Arduino, encoder and the transmitter. The accelerometer detects changes in the hand gestures and sends it to the Arduino. Arduino then sends the required data to drive the motors to the encoder which will then be transmitted through the transmitter. 
+The receiver circuit consists of the RF Receiver, decoder and a motor driver. To check for proper transmission of the signal, a led can be connected at the VT pin of the decoder. This will be activated if the transmission is fine. Two motors attached to the motor driver can be moved according to the signals received by the receiver. 
+ Also, an Arduino can be used at the receiving end to which an IR sensor can be connected. The IR Sensor can be used to detect any obstacle.Thus, when an obstacle is detected, the pin to which the buzzer is connected can be activated.
